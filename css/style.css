@@ -1,0 +1,140 @@
+/* CSS */
+
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+Color Palette:
+Light Teal: #8ABFB5
+Dark Teal: #5E8C7F
+Light Brown: #A66F3F
+Dark Brown: #8C442A
+Dark: #0D0D0D
+Dark Green: #22221A
+Green: rgb(46,105,16)
+Navy: rgb(46,105,163)
+
+Shades of Dark:
+Lighter
+#999999
+#595959
+#333333
+#0D0D0D
+Darker
+*/
+
+/* Logo */
+#cont_logo{
+    background-color: rgb(46,105,16);
+    color: white;
+}
+
+#cont_logo img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#cont_logo span:nth-child(2){
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+#cont_logo span:last-child{
+    font-size: 1.5rem;
+    color: #8ABFB5;
+    vertical-align: middle;
+}
+
+/* Navbar */
+#cont_nav{
+    background-color: rgb(46,105,16);
+    color: white;
+}
+#cont_nav > div{
+    height: 100%;
+}
+#cont_nav i{
+    font-size: 1.5rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Sidebar */
+#cont_sidebar{
+    background-color: #FEFCFB;
+    height: calc(100vh - 60px);
+}
+#cont_sidebar ul li{
+    padding: 20px;
+}
+#cont_sidebar ul li > *{
+    vertical-align: middle;
+    color: #8C442A;
+    font-size: 1.15rem;
+}
+#cont_sidebar ul li > i{
+    float: right;
+}
+
+/* Dashboard */
+#cont_dashboard{
+    background-color: #E6E4E3;
+}
+#cont_dashboard ol.breadcrumb{
+    background-color: #FEFCFB;
+    padding: 20px;
+    color: #8C442A;
+    height: 75.4px;
+    border-left: 1px solid rgba(0,0,0,.125);
+    font-size: 1.15rem;
+}
+#cont_dashboard #cont_data_exploration .card{
+    height: 200px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #FEFCFB;
+    color: #5E8C7F;
+}
+
+@media only screen and (max-width: 960px) {
+    /* Implements a responsive layout for tablet devices and under */
+    #cont_sidebar{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 99;
+        height: 100vh;
+        width: 0px;
+        max-width: 0px;
+        opacity: 0;
+        transition: 0.5s;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #cont_sidebar.active{
+        width: 250px;
+        max-width: 250px;
+        opacity: 1;
+    }
+    #cont_dashboard{
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: calc(100vh - 60px);
+        overflow-y: scroll;
+    }
+    #cont_logo span{
+        display: none;
+    }
+    nav ol.breadcrumb{
+        margin: 0px;
+        padding: 10px !important;
+        height: auto !important;
+    }
+    #btn_settings{
+        cursor: pointer;
+    }
+    #cont_data_exploration div.card{
+        margin: 10px !important;
+    }
+
+  }
