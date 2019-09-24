@@ -5,6 +5,8 @@
 }
 
 /*
+Go to color.adobe.com/color wheel to get a list of good colors you want to use
+
 Color Palette:
 Light Teal: #8ABFB5
 Dark Teal: #5E8C7F
@@ -25,79 +27,96 @@ Darker
 */
 
 /* Logo */
+
 #cont_logo{
-    background-color: rgb(46,105,16);
-    color: white;
+    background-color: #0D0D0D;
+    color: ghostwhite;
+
 }
 
 #cont_logo img{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 #cont_logo span:nth-child(2){
     font-size: 1.5rem;
     vertical-align: middle;
     margin-left: 4px;
 }
+
 #cont_logo span:last-child{
-    font-size: 1.5rem;
-    color: #8ABFB5;
+font-size: 1.5rem;
     vertical-align: middle;
+    color:white;
 }
 
-/* Navbar */
+/*Nav bar . the top bar*/
 #cont_nav{
-    background-color: rgb(46,105,16);
-    color: white;
+    background-color: #0D0D0D;
+    color: ghostwhite;
 }
+
 #cont_nav > div{
-    height: 100%;
+    height: 100%
 }
-#cont_nav i{
+
+#cont_nav i {
     font-size: 1.5rem;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-/* Sidebar */
+/*side bar*/
+
 #cont_sidebar{
-    background-color: #FEFCFB;
-    height: calc(100vh - 60px);
+    background-color: white;
+    height: calc(100vh - 60px)
 }
+
 #cont_sidebar ul li{
     padding: 20px;
 }
-#cont_sidebar ul li > *{
+
+#cont_sidebar ul li > * {
     vertical-align: middle;
-    color: #8C442A;
-    font-size: 1.15rem;
+    color:#8C442A;
+    font-size: 1.5rem;
 }
+
 #cont_sidebar ul li > i{
-    float: right;
+    float:right;
 }
 
-/* Dashboard */
+/*dashboard*/
+
 #cont_dashboard{
-    background-color: #E6E4E3;
+    background-color: gainsboro;
 }
-#cont_dashboard ol.breadcrumb{
-    background-color: #FEFCFB;
+
+#cont_dasboard ol.breadcrumb{
+    background-color: antiquewhite;
     padding: 20px;
-    color: #8C442A;
+    color:#8C442A;
     height: 75.4px;
-    border-left: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid;
+    rgba(0,0,0,.125);
+    border-radius: 0px;
     font-size: 1.15rem;
 }
-#cont_dashboard #cont_data_exploration .card{
-    height: 200px;
-    padding: 10px;
+
+#cont_dashboard
+#cont_data_exploration ,card,
+#cont_dashboard #cont_data_exploration2{
+    padding:10px;
     margin: 5px;
-    background-color: #FEFCFB;
-    color: #5E8C7F;
+    background-color: whitesmoke;
+    color:palevioletred;
 }
 
-@media only screen and (max-width: 960px) {
-    /* Implements a responsive layout for tablet devices and under */
+
+@media only screen and (max-width:960px){
+    /*any change you put in here are only applicable to mobile and tablet devices bc max width and px number*/
     #cont_sidebar{
         position: absolute;
         top: 0px;
@@ -111,30 +130,38 @@ Darker
         white-space: nowrap;
         overflow: hidden;
     }
+    
     #cont_sidebar.active{
         width: 250px;
         max-width: 250px;
         opacity: 1;
     }
+    
     #cont_dashboard{
         flex: 0 0 100%;
-        max-width: 100%;
-        height: calc(100vh - 60px);
+        max-width: 100%
+            height: calc(100vh - 60px);
         overflow-y: scroll;
+        
     }
     #cont_logo span{
         display: none;
     }
-    nav ol.breadcrumb{
+    
+   #nav.ol.breadcrumb{
         margin: 0px;
         padding: 10px !important;
         height: auto !important;
     }
-    #btn_settings{
-        cursor: pointer;
+    
+   # btn_settings{
+        cursor: crosshair;
     }
-    #cont_data_exploration div.card{
+    
+    #cont_data_exploration div.card,  #cont_data_exploration2 div.card{
         margin: 10px !important;
     }
+    
+    
+}
 
-  }
