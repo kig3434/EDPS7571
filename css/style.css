@@ -1,12 +1,8 @@
-/* CSS */
-
-{
-    font-family: 'Poppins', sans-serif;
+* {
+	font-family: "Poppins", sans-serif;
 }
 
 /*
-Go to color.adobe.com/color wheel to get a list of good colors you want to use
-
 Color Palette:
 Light Teal: #8ABFB5
 Dark Teal: #5E8C7F
@@ -14,8 +10,6 @@ Light Brown: #A66F3F
 Dark Brown: #8C442A
 Dark: #0D0D0D
 Dark Green: #22221A
-Green: rgb(46,105,16)
-Navy: rgb(46,105,163)
 
 Shades of Dark:
 Lighter
@@ -27,141 +21,117 @@ Darker
 */
 
 /* Logo */
-
-#cont_logo{
-    background-color: #0D0D0D;
-    color: ghostwhite;
-
+#cont_logo {
+	background-color: #0d0d0d;
+	color: white;
+}
+#cont_logo img {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#cont_logo span:nth-child(2) {
+	font-size: 1.5rem;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+#cont_logo span:last-child {
+	font-size: 1.5rem;
+	color: #8abfb5;
+	vertical-align: middle;
 }
 
-#cont_logo img{
-    margin-top: 5px;
-    margin-bottom: 5px;
+/* Navbar */
+#cont_nav {
+	background-color: #0d0d0d;
+	color: white;
 }
-
-#cont_logo span:nth-child(2){
-    font-size: 1.5rem;
-    vertical-align: middle;
-    margin-left: 4px;
+#cont_nav > div {
+	height: 100%;
 }
-
-#cont_logo span:last-child{
-font-size: 1.5rem;
-    vertical-align: middle;
-    color:white;
-}
-
-/*Nav bar . the top bar*/
-#cont_nav{
-    background-color: #0D0D0D;
-    color: ghostwhite;
-}
-
-#cont_nav > div{
-    height: 100%
-}
-
 #cont_nav i {
-    font-size: 1.5rem;
-    margin-left: 5px;
-    margin-right: 5px;
+	font-size: 1.5rem;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
-/*side bar*/
-
-#cont_sidebar{
-    background-color: white;
-    height: calc(100vh - 60px)
+/* Sidebar */
+#cont_sidebar {
+	background-color: #fefcfb;
+	height: calc(100vh - 60px);
 }
-
-#cont_sidebar ul li{
-    padding: 20px;
+#cont_sidebar ul li {
+	padding: 20px;
 }
-
 #cont_sidebar ul li > * {
-    vertical-align: middle;
-    color:#8C442A;
-    font-size: 1.5rem;
+	vertical-align: middle;
+	color: #8c442a;
+	font-size: 1.15rem;
+}
+#cont_sidebar ul li > i {
+	float: right;
 }
 
-#cont_sidebar ul li > i{
-    float:right;
+/* Dashboard */
+#cont_dashboard {
+	background-color: #e6e4e3;
+}
+#cont_dashboard ol.breadcrumb {
+	background-color: #fefcfb;
+	padding: 20px;
+	color: #8c442a;
+	height: 75.4px;
+	border-left: 1px solid rgba(0, 0, 0, 0.125);
+	font-size: 1.15rem;
+}
+#cont_dashboard #cont_data_exploration .card {
+	padding: 10px;
+	margin: 5px;
+	background-color: #fefcfb;
+	color: #5e8c7f;
 }
 
-/*dashboard*/
-
-#cont_dashboard{
-    background-color: gainsboro;
+@media only screen and (max-width: 960px) {
+	/* Implements a responsive layout for tablet devices and under */
+	#cont_sidebar {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 99;
+		height: 100vh;
+		width: 0px;
+		max-width: 0px;
+		opacity: 0;
+		transition: 0.5s;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	#cont_sidebar.active {
+		width: 250px;
+		max-width: 250px;
+		opacity: 1;
+	}
+	#cont_dashboard {
+		flex: 0 0 100%;
+		max-width: 100%;
+		height: calc(100vh - 60px);
+		overflow-y: scroll;
+	}
+	#cont_logo span {
+		display: none;
+	}
+	nav ol.breadcrumb {
+		margin: 0px;
+		padding: 10px !important;
+		height: auto !important;
+	}
+	#btn_settings {
+		cursor: pointer;
+	}
+	#cont_data_exploration div.card {
+		margin: 10px !important;
+	}
 }
 
-#cont_dasboard ol.breadcrumb{
-    background-color: antiquewhite;
-    padding: 20px;
-    color:#8C442A;
-    height: 75.4px;
-    border-left: 1px solid;
-    rgba(0,0,0,.125);
-    border-radius: 0px;
-    font-size: 1.15rem;
+.apexcharts-tooltip {
+	color: rgb(89, 89, 89);
 }
-
-#cont_dashboard
-#cont_data_exploration ,card,
-#cont_dashboard #cont_data_exploration2{
-    padding:10px;
-    margin: 5px;
-    background-color: whitesmoke;
-    color:palevioletred;
-}
-
-
-@media only screen and (max-width:960px){
-    /*any change you put in here are only applicable to mobile and tablet devices bc max width and px number*/
-    #cont_sidebar{
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 99;
-        height: 100vh;
-        width: 0px;
-        max-width: 0px;
-        opacity: 0;
-        transition: 0.5s;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    
-    #cont_sidebar.active{
-        width: 250px;
-        max-width: 250px;
-        opacity: 1;
-    }
-    
-    #cont_dashboard{
-        flex: 0 0 100%;
-        max-width: 100%
-            height: calc(100vh - 60px);
-        overflow-y: scroll;
-        
-    }
-    #cont_logo span{
-        display: none;
-    }
-    
-   #nav.ol.breadcrumb{
-        margin: 0px;
-        padding: 10px !important;
-        height: auto !important;
-    }
-    
-   # btn_settings{
-        cursor: crosshair;
-    }
-    
-    #cont_data_exploration div.card,  #cont_data_exploration2 div.card{
-        margin: 10px !important;
-    }
-    
-    
-}
-
