@@ -1,135 +1,227 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Bootstrap CSS: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <!-- Google Fonts: https://fonts.google.com/ -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<!-- Google Fonts: https://fonts.google.com/ -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
 
-    <!-- Font Awesome: https://fontawesome.com/?from=io -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css" integrity="sha256-cC4ByuxbguozEVx8jcKy94MFiGvxN9GwjCqZ8f3+yBk=" crossorigin="anonymous" />
+		<!-- Font Awesome: https://fontawesome.com/?from=io -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css" integrity="sha256-cC4ByuxbguozEVx8jcKy94MFiGvxN9GwjCqZ8f3+yBk=" crossorigin="anonymous" />
 
-    <!-- Main Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-    <title>Week 3: Intro to CSS</title>
-      
-<style>
-      
-      
-</style>
-  </head>
-  <body>
-    <!-- Page Area -->
-    <div class="container-fluid">
-      <!-- Nav Area -->
-      <div class="row">
-          <!-- Logo -->
-        <div id="cont_logo" class="col-3">
-          <img src="assets/logo.svg" height="50px" width="auto">
-          <span>Titanic</span>
-          <span class="d-none d-md-inline">Survival</span>
-        </div>
-        <div id="cont_nav" class="col-9">
-          <div class="d-flex flex-row justify-content-end align-items-center">
-            <div class="p-3">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="p-3">
-                <i class="far fa-envelope"></i>
-            </div>
-            <div id="btn_settings" class="p-3">
-                <i class="fas fa-bars"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Content Area -->
-      <div class="row">
-        <div id="cont_sidebar" class="col-3 p-0">
-          <!-- Sidebar Components -->
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><span><i class="fas fa-chart-pie p-2"></i>DASHBOARD</span><i class="far fa-caret-square-down p-3"></i></li>
-            <li class="list-group-item"><span><i class="fas fa-signal p-2"></i>DATA EXPLORATION</span></li>
-          </ul>
-        </div>
-        <div id="cont_dashboard" class="col-9 p-0">
-          <!-- Dashboard Components-->
+		<!-- Main Stylesheet -->
+		<link href="css/style.css" rel="stylesheet" />
+		<title>EDPS 7950 Week 10</title>
+	</head>
+	<body>
+		<!-- Page Area -->
+		<div class="container-fluid">
+			<!-- Nav Area -->
+			<div class="row">
+				<div id="cont_logo" class="col-3">
+					<img src="assets/logo.svg" height="50px" width="auto" />
+					<span>Titanic</span>
+					<span>Survival</span>
+				</div>
+				<div id="cont_nav" class="col-9">
+					<div class="d-flex flex-row justify-content-end align-items-center">
+						<div class="p-2">
+							<i class="fas fa-search"></i>
+						</div>
+						<div class="p-2">
+							<i class="far fa-bell"></i>
+						</div>
+						<div id="btn_settings" class="p-2">
+							<i class="fas fa-bars"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Content Area -->
+			<div class="row">
+				<div id="cont_sidebar" class="col-3 p-0">
+					<!-- Sidebar Components -->
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">
+							<span><i class="fas fa-chart-pie p-2"></i>DASHBOARD</span><i class="fas fa-chevron-down p-2"></i>
+						</li>
+						<li class="list-group-item">
+							<span><i class="fas fa-signal p-2"></i>DATA EXPLORATION</span>
+						</li>
+					</ul>
+				</div>
+				<div id="cont_dashboard" class="col-9 p-0">
+					<!-- Dashboard Components-->
 
-          <!-- Navigation -->
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 p-0">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">Home</li>
-                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
-          </div>
+					<!-- Navigation -->
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 p-0">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item">Home</li>
+										<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+					</div>
 
-          <!-- Cards Descriptive Stats -->
-          <div id="cont_data_exploration" class="container-fluid">
-              <div class="row">
-                <div class="col-md-6 col-xl-3">
-                  <!-- Content for Survived -->  
-                  <div class="card">Survived</div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                  <!-- Content for Pclass -->
-                  <div class="card">Pclass</div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                  <!-- Content for Sex -->
-                  <div class="card">Sex</div>
-                </div>
-                <div class="col-md-6 col-xl-3">
-                  <!-- Content for Embarked -->
-                  <div class="card">Embarked</div>
-                </div>
-              </div>
-          </div>
+					<!-- Cards Descriptive Stats -->
+					<div id="cont_data_exploration" class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-xl-3">
+								<!-- Content for Survived -->
+								<div class="card"><div id="chart0"></div></div>
+							</div>
+							<div class="col-md-6 col-xl-3">
+								<!-- Content for Sex -->
+								<div class="card"><div id="chart1"></div></div>
+							</div>
+							<div class="col-md-6 col-xl-3">
+							<!-- Content for Pclass -->
+								<div class="card"><div id="chart5"></div></div>
+							</div>
+							<div class="col-md-6 col-xl-3">
+								<!-- Content for Embarked -->
+								<div class="card">Embarked</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+                                <!-- Content for Age -->
+								<div class="card">
+									<div id="chart2"></div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="card">SibSp</div>
+							</div>
+							<div class="col">
+								<div class="card">Parch</div>
+							</div>
+						</div>
+					</div>
 
-            <!---Activity 2 -->
-               <div id="cont_data_exploration2" class="container-fluid">
-              <div class="row justify-content-center align-items-center">
-                <div class="col-md-3">
-                  <!-- Content for Age -->  
-                  <div class="card">Age</div>
-                </div>
-                <div class="col-md-3">
-                  <!-- Content for SibSp -->
-                  <div class="card">SibSp</div>
-                </div>
-                <div class="col-md-3">
-                  <!-- Content for Parch -->
-                  <div class="card">Parch
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-              </div>
-          </div>
-            
-        </div>
-      </div>
-    </div>
+					<!-- Model Simulator -->
+					<div id="cont_model_sim" class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card mb-5">
+									<div class="card-header">
+										Model Simulator
+									</div>
+									<div class="card-body">
+										<form id="cont_form_model">
+											<div id="chart3"></div>
+											<div class="form-group">
+												<label for="dropdown_model">Select a Model</label>
+												<select class="form-control" id="dropdown_model">
+													<option>Majority Class</option>
+													<option>Decision Tree</option>
+													<option>Neural Network</option>
+													<option>Naive Bayes</option>
+												</select>
+											</div>
+										</form>
+										<form id="cont_form_input" class="d-none">
+											<h4 id="model_label"></h4>
+											<div class="form-group">
+												<label for="input_gender">Gender</label>
+												<select class="form-control" id="input_gender">
+													<option>Male</option>
+													<option>Female</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="input_title">Title</label>
+												<select class="form-control" id="input_title">
+													<option>Mr</option>
+													<option>Mrs</option>
+													<option>Miss</option>
+													<option>Master</option>
+													<option>Rare</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="input_class">Passenger Class</label>
+												<select class="form-control" id="input_class">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="input_embarked">Embarked</label>
+												<select class="form-control" id="input_embarked">
+													<option>Cherbourg</option>
+													<option>Southampton</option>
+													<option>Queenstown</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="input_siblings">Number of Siblings/Spouses aboard the Titanic</label>
+												<input type="range" class="form-control-range" id="input_siblings" min="0" max="8" />
+											</div>
+											<div class="form-group">
+												<label for="input_parch">Number of Parents/Children aboard the Titanic</label>
+												<input type="range" class="form-control-range" id="input_parch" min="0" max="6" />
+											</div>
+											<div class="form-group">
+												<label for="input_age">Passenger's Age</label>
+												<input type="text" class="form-control" id="input_age" placeholder="22" />
+											</div>
+											<div class="form-group">
+												<label for="input_fare">Fare paid for ticket</label>
+												<input type="text" class="form-control" id="input_fare" placeholder="38" />
+											</div>
+											<div class="btn-group w-100" role="group">
+												<button id="btn_predict" type="button" class="btn btn-dark">Predict</button>
+												<button id="btn_reset" type="button" class="btn btn-dark">Reset</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card">
+									<div class="card-header">
+										Model Prediction
+									</div>
+									<div class="card-body">
+										<div id="chart4"></div>
+									</div>
+									<div class="card-footer">
+										<strong>Interpretation</strong>
+										<p class="text-justify">
+											The model classifies this observation as more likely to have
+											<span id="model_prediction" style="color: #8c442a;">N/A</span> with a likelihood probability of <span id="model_likelihood" style="color: #8c442a;">50%</span>.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-    <!-- Apex Charts -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Main JS Doc: https://apexcharts.com/ -->
-    <script src="js/main.js"></script>
-    </body>
+		<!-- Apex Charts -->
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+		<!-- Main JS Doc: https://apexcharts.com/ -->
+		<script src="js/data.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
