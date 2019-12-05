@@ -216,7 +216,7 @@ var options = {
 				series: [
 					{
 						name: "Error",
-						data: [38, 18.29, 40, 40]
+						data: [38, 18.29, 20, 21]
 					}
 				],
 				title: {
@@ -339,80 +339,7 @@ var options = {
 						horizontal: 1
 					}
 				}
-			}, // End of Radial Bars Chart
-            // Start of Bar Chart
-			{
-				chart: {
-					height: 350,
-					type: "bar"
-				},
-				plotOptions: {
-					bar: {
-						columnWidth: "50%",
-						endingShape: "rounded"
-					}
-				},
-				dataLabels: {
-					enabled: false
-				},
-				tooltip: {
-					style: {
-						fontSize: "14px",
-						fontFamily: "Poppins"
-						// Color is assigned via the CSS using .apexcharts-tooltip
-					}
-				},
-				series: [
-					{
-						name: "Survived",
-						data: [201, 118, 182]
-					},
-					{
-						name: "Died",
-						data: [123, 158, 527]
-					}
-				],
-				xaxis: {
-					categories: ["1", "2", "3"],
-					labels: {
-						style: {
-							fontSize: "14px",
-							color: "#595959",
-							fontFamily: "Poppins"
-						}
-					}
-				},
-				yaxis: {
-					labels: {
-						style: {
-							fontSize: "14px",
-							color: "#595959",
-							fontFamily: "Poppins"
-						}
-					}
-				},
-				title: {
-					text: "Pclass",
-					align: "center",
-					style: {
-						fontSize: "18px",
-						color: "#595959",
-						fontFamily: "Poppins"
-					}
-				},
-				colors: ["#8ABFB5", "#A66F3F"],
-				legend: {
-					position: "bottom",
-					fontSize: "14px",
-					fontFamily: "Poppins",
-					labels: {
-						useSeriesColors: true
-					}
-				},
-				fill: {
-					opacity: 1
-				}
-			} //End of Bar Chart
+			} // End of Radial Bars Chart
 		]
 	}
 };
@@ -423,8 +350,6 @@ var chart1 = new ApexCharts(document.querySelector("#chart1"), options.data.item
 var chart2 = new ApexCharts(document.querySelector("#chart2"), options.data.items[2]);
 var chart3 = new ApexCharts(document.querySelector("#chart3"), options.data.items[3]);
 var chart4 = new ApexCharts(document.querySelector("#chart4"), options.data.items[4]);
-var chart5 = new ApexCharts(document.querySelector("#chart5"), options.data.items[5]);
-
 
 // Render the chart using the element and data
 chart.render();
@@ -432,5 +357,3 @@ chart1.render();
 chart2.render();
 chart3.render();
 chart4.render();
-chart5.render();
-
