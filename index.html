@@ -16,7 +16,7 @@
 
 		<!-- Main Stylesheet -->
 		<link href="css/style.css" rel="stylesheet" />
-		<title>EDPS 7950 Week 10</title>
+		<title>EDPS 7950 Activity 4 Greenberg</title>
 	</head>
 	<body>
 		<!-- Page Area -->
@@ -80,12 +80,12 @@
 								<div class="card"><div id="chart0"></div></div>
 							</div>
 							<div class="col-md-6 col-xl-3">
-								<!-- Content for Sex -->
+								<!-- Content for Pclass -->
 								<div class="card"><div id="chart1"></div></div>
 							</div>
 							<div class="col-md-6 col-xl-3">
-							<!-- Content for Pclass -->
-								<div class="card"><div id="chart5"></div></div>
+								<!-- Content for Sex -->
+								<div class="card">Pclass</div>
 							</div>
 							<div class="col-md-6 col-xl-3">
 								<!-- Content for Embarked -->
@@ -94,7 +94,6 @@
 						</div>
 						<div class="row">
 							<div class="col">
-                                <!-- Content for Age -->
 								<div class="card">
 									<div id="chart2"></div>
 								</div>
@@ -124,8 +123,8 @@
 												<select class="form-control" id="dropdown_model">
 													<option>Majority Class</option>
 													<option>Decision Tree</option>
-													<option>Neural Network</option>
-													<option>Naive Bayes</option>
+													<!--<option>Neural Network</option>
+													<option>Naive Bayes</option>-->
 												</select>
 											</div>
 										</form>
@@ -138,7 +137,7 @@
 													<option>Female</option>
 												</select>
 											</div>
-											<div class="form-group">
+											<!--<div class="form-group">
 												<label for="input_title">Title</label>
 												<select class="form-control" id="input_title">
 													<option>Mr</option>
@@ -147,7 +146,7 @@
 													<option>Master</option>
 													<option>Rare</option>
 												</select>
-											</div>
+											</div> -->
 											<div class="form-group">
 												<label for="input_class">Passenger Class</label>
 												<select class="form-control" id="input_class">
@@ -156,7 +155,23 @@
 													<option>3</option>
 												</select>
 											</div>
-											<div class="form-group">
+                                            <div class="form-group">
+												<label for="input_BFS">Binned Family Size</label>
+												<select class="form-control" id="input_BFS">
+													<option>Large Family</option>
+													<option>Small Family</option>
+													<option>Single</option>
+												</select>
+											</div>
+                                            <div class="form-group">
+												<label for="input_BA">Binned Age</label>
+												<select class="form-control" id="input_BA">
+													<option>range1</option>
+													<option>range2</option>
+													<option>range3</option>
+												</select>
+											</div>
+											<!--<div class="form-group">
 												<label for="input_embarked">Embarked</label>
 												<select class="form-control" id="input_embarked">
 													<option>Cherbourg</option>
@@ -179,7 +194,7 @@
 											<div class="form-group">
 												<label for="input_fare">Fare paid for ticket</label>
 												<input type="text" class="form-control" id="input_fare" placeholder="38" />
-											</div>
+											</div>-->
 											<div class="btn-group w-100" role="group">
 												<button id="btn_predict" type="button" class="btn btn-dark">Predict</button>
 												<button id="btn_reset" type="button" class="btn btn-dark">Reset</button>
